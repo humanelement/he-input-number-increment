@@ -1,0 +1,96 @@
+<html>
+<head>
+  <title>HE Input Number Increment</title>
+  <link type="text/css" rel="stylesheet" href="css/styles.css" />
+
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/he_input_number_increment.min.js"></script>
+</head>
+<body>
+
+<h1>Human Element (HE) "Input Number Increment" Demo</h1>
+
+<p>_____ <strong>heNumberIncrement.init();</strong></p>
+
+<h2>Example 1</h2>
+
+<div class="qty-wrapper example1">
+  <input type="text" pattern="\d*" name="qty" id="qty" maxlength="12" title="Qty" class="input-text qty" />
+  <div class="qty_btns">
+      <div class="up"></div>
+      <div class="down"></div>
+  </div>
+</div>
+
+<h2>Example 2</h2>
+
+<div class="qty-wrapper example2">
+  <input type="text" pattern="\d*" name="qty" id="qty" maxlength="12" title="Qty" class="input-text qty" />
+  <div class="qty_btns">
+      <div class="up"></div>
+      <div class="down"></div>
+  </div>
+</div>
+
+<h2>Code for these examples</h2>
+
+<div class="code">
+  &lt;<span class="object">script</span> <span class="number">type</span>=<span class="string">"text/javascript"</span>&gt;<br />
+    <span class="method">jQuery</span>(<span class="number">document</span>).<span class="method">ready</span>(function(){<br />
+  <br />
+  &nbsp;&nbsp;&nbsp;&nbsp; <span class="comment">//example 1</span><br />
+  &nbsp;&nbsp;&nbsp;&nbsp; <span class="object">heNumberIncrement</span>.<span class="method">init</span>({<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  input:<span class="string">'.qty-wrapper.example1 .input-text.qty:first'</span>, <span class="comment">//which &lt;input&gt; element?</span><br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  up_btn:<span class="string">'.qty-wrapper.example1 .qty_btns .up:first'</span>, <span class="comment">//what is the up button element?</span><br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  down_btn:<span class="string">'.qty-wrapper.example1 .qty_btns .down:first'</span>, <span class="comment">//what is the down button element?</span><br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  min:<span class="number">1</span>, <span class="comment">//minimum allowed value</span><br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  max:<span class="number">-1</span>, <span class="comment">//maximum allowed value (-1 = no limit)</span><br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  start_at:<span class="number">1</span>, <span class="comment">//number to start at on page load</span><br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  step:<span class="number">1</span> <span class="comment">//how much to add or subtract whenever clicking on the up or down button</span><br />
+  &nbsp;&nbsp;&nbsp;&nbsp; });<br />
+  <br />
+  &nbsp;&nbsp;&nbsp;&nbsp; <span class="comment">//example 2</span><br />
+  &nbsp;&nbsp;&nbsp;&nbsp; <span class="object">heNumberIncrement</span>.<span class="method">init</span>({<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  input:<span class="string">'.qty-wrapper.example2 .input-text.qty:first'</span>, <span class="comment">//which &lt;input&gt; element?</span><br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  up_btn:<span class="string">'.qty-wrapper.example2 .qty_btns .up:first'</span>, <span class="comment">//what is the up button element?</span><br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  down_btn:<span class="string">'.qty-wrapper.example2 .qty_btns .down:first'</span>, <span class="comment">//what is the down button element?</span><br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  min:<span class="number">3</span>, <span class="comment">//minimum allowed value</span><br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  max:<span class="number">5</span>, <span class="comment">//maximum allowed value (-1 = no limit)</span><br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  start_at:<span class="number">3</span>, <span class="comment">//number to start at on page load</span><br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  step:<span class="number">2</span> <span class="comment">//how much to add or subtract whenever clicking on the up or down button</span><br />
+  &nbsp;&nbsp;&nbsp;&nbsp; });<br />
+  <br />
+    });<br />
+  &lt;/<span class="object">script</span>&gt;
+</div>
+
+<script type="text/javascript">
+  jQuery(document).ready(function(){
+
+    //example 1
+    heNumberIncrement.init({
+        input:'.qty-wrapper.example1 .input-text.qty:first', //which <input> element?
+        up_btn:'.qty-wrapper.example1 .qty_btns .up:first', //what is the up button element?
+        down_btn:'.qty-wrapper.example1 .qty_btns .down:first', //what is the down button element?
+        min:1, //minimum allowed value
+        max:-1, //maximum allowed value (-1 = no limit)
+        start_at:1, //number to start at on page load
+        step:1 //how much to add or subtract whenever clicking on the up or down button
+    });
+
+    //example 2
+    heNumberIncrement.init({
+        input:'.qty-wrapper.example2 .input-text.qty:first', //which <input> element?
+        up_btn:'.qty-wrapper.example2 .qty_btns .up:first', //what is the up button element?
+        down_btn:'.qty-wrapper.example2 .qty_btns .down:first', //what is the down button element?
+        min:3, //minimum allowed value
+        max:5, //maximum allowed value (-1 = no limit)
+        start_at:3, //number to start at on page load
+        step:2 //how much to add or subtract whenever clicking on the up or down button
+    });
+
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,118 @@
+/* line 5, ../scss/_plugin-sample-styles.scss */
+.init_he_num_increment {
+  position: relative;
+  width: 70px;
+  height: 36px;
+  border: solid 1px #999a9f;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+/* line 8, ../scss/_plugin-sample-styles.scss */
+.init_he_num_increment label {
+  display: none;
+}
+/* line 10, ../scss/_plugin-sample-styles.scss */
+.init_he_num_increment input.input-text.qty {
+  outline: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 100%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  border: none;
+  border-right: solid 20px transparent;
+  text-align: center;
+  font-size: 16px;
+}
+/* line 15, ../scss/_plugin-sample-styles.scss */
+.init_he_num_increment .qty_btns {
+  width: 20px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 100%;
+  background-color: #999a9f;
+}
+/* line 18, ../scss/_plugin-sample-styles.scss */
+.init_he_num_increment .qty_btns .up, .init_he_num_increment .qty_btns .down {
+  position: absolute;
+  height: 50%;
+  width: 100%;
+  left: 0;
+  cursor: pointer;
+  opacity: 1;
+}
+/* line 21, ../scss/_plugin-sample-styles.scss */
+.init_he_num_increment .qty_btns .up:hover, .init_he_num_increment .qty_btns .down:hover {
+  opacity: .6;
+}
+/* line 23, ../scss/_plugin-sample-styles.scss */
+.init_he_num_increment .qty_btns .up:after, .init_he_num_increment .qty_btns .down:after {
+  content: "";
+  display: block;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+/* line 26, ../scss/_plugin-sample-styles.scss */
+.init_he_num_increment .qty_btns .up {
+  top: 0px;
+}
+/* line 27, ../scss/_plugin-sample-styles.scss */
+.init_he_num_increment .qty_btns .up:after {
+  bottom: 3px;
+  border-width: 0 6px 7px 6px;
+  border-color: transparent transparent #fff transparent;
+}
+/* line 29, ../scss/_plugin-sample-styles.scss */
+.init_he_num_increment .qty_btns .down {
+  bottom: 0px;
+}
+/* line 30, ../scss/_plugin-sample-styles.scss */
+.init_he_num_increment .qty_btns .down:after {
+  top: 3px;
+  border-width: 7px 6px 0 6px;
+  border-color: #fff transparent transparent transparent;
+}
+
+/* line 1, ../scss/_code.scss */
+.code {
+  font-family: "Courier New", Monaco, "Lucida Sans Typewriter", sans-serif;
+  background-color: #282c34;
+  color: #abb2bf;
+  padding: 20px;
+  font-size: 18px;
+  line-height: 22px;
+  white-space: nowrap;
+  overflow: auto;
+}
+/* line 4, ../scss/_code.scss */
+.code .object {
+  color: #e06a64;
+}
+/* line 5, ../scss/_code.scss */
+.code .comment {
+  color: #5c6370;
+  font-style: italic;
+}
+/* line 6, ../scss/_code.scss */
+.code .method {
+  color: #61afef;
+}
+/* line 7, ../scss/_code.scss */
+.code .number {
+  color: #dfb672;
+}
+/* line 8, ../scss/_code.scss */
+.code .string {
+  color: #98c379;
+}
