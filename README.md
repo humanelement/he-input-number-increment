@@ -1,11 +1,9 @@
 # he-input-number-increment
-Lightweight and simple tabs plugin for creating tabbed content on the page.
+A lightweight plugin to implement the number increment functionality for a normal text input box. With this plugin, the input box only contains numbers. You can specify an up and down button to increment the number up or down.
 
-Simple to implement and has an automatic, built-in, responsive mode.
+Written by Human Element's Milligan
 
-Written by Human Element's milligan
-
-See <a href="http://humanelement.github.io/he-tabs-plugin/" target="_blank">DEMO</a>
+See <a href="http://humanelement.github.io/he-input-number-increment/" target="_blank">DEMO</a>
 
 Usage examples:
 ```Javascript
